@@ -10,16 +10,25 @@ The ESP32 LED Control via Web project allows users to control an LED remotely th
 - **Responsive Design**: Lightweight and suitable for integration into vehicle electronics without compromising performance.
 
 ## Working Principle
- The ESP32 initializes as a Wi-Fi station and connects to the local network. It then starts an HTTP server that serves a webpage. This page contains buttons to control the LED.
+The ESP32 initializes as a Wi-Fi station and connects to the local network. It then starts an HTTP server that serves a webpage. This page contains buttons to control the LED.
+
 The following sequence occurs during operation:
-**1**. The user accesses the ESP32’s IP address via a browser.
-**2**. The ESP32 serves a styled HTML page with Turn ON and Turn OFF buttons.
-**3**. When a button is clicked, a GET request is sent to the ESP32.
-**4**. The ESP32 processes this request and updates the GPIO pin accordingly:
-         **-** /on: Turns the LED ON.
-         **-** /off: Turns the LED OFF.
+
+1. The user accesses the ESP32’s IP address via a browser.  
+2. The ESP32 serves a styled HTML page with **Turn ON** and **Turn OFF** buttons.  
+3. When a button is clicked, a GET request is sent to the ESP32.  
+4. The ESP32 processes this request and updates the GPIO pin accordingly:
+   - `/on`: Turns the LED ON.  
+   - `/off`: Turns the LED OFF.
+
 The page dynamically updates to reflect the current state of the LED.
-The ESP32 can function in two modes: Station Mode (STA) and Access Point Mode (AP).
+
+---
+
+The ESP32 can function in two modes:
+
+- **Station Mode (STA)**
+- **Access Point Mode (AP)**
 ## 1. Station Mode (STA)
 In Station Mode, the ESP32 connects to an existing Wi-Fi network.
 
