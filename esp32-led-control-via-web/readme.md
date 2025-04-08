@@ -58,6 +58,5 @@ Below is the circuit Connections of the ESP32 LED Web Control :
 
 ## ESP32 LED CONTROL WEB IMPLEMENTATION
 Below is the Implementation of the ESP32 LED Web Control :
-![Car Black Box Diagram]
-(https://github.com/mohsin1845/ESP32-IDF/blob/54cc9035e6505e5309164f970e0bd62547c0d0bf/esp32-led-control-via-web/Img/img1.png)
 
+![Car Black Box Diagram](https://github.com/mohsin1845/ESP32-IDF/blob/e72b8c790b1feb90b08f019512c9258a5a2b4150/esp32-led-control-via-web/Img/img1.png)
