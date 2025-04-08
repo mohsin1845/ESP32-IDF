@@ -54,5 +54,5 @@ In Access Point Mode, the ESP32 creates its own Wi-Fi network, allowing direct c
 ## ESP32 LED Control System
 Below is the Implementation of the ESP32 LED Web Control:
 
-![Car Black Box Diagram](https://github.com/mohsin1845/esp32-led-control-via-web/Img/Screenshot 2025-04-08 161002.png)
+![Car Black Box Diagram](https://github.com/mohsin1845/ESP32-IDF/blob/6bdffe8bc5fb92cce171db44253c797ae5b37d31/esp32-led-control-via-web/Img/WhatsApp%20Image%202025-04-08%20at%2016.15.22_c0e6ef2d.jpg)
 
