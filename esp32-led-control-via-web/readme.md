@@ -8,7 +8,7 @@ The ESP32 LED Control via Web project allows users to control an LED remotely th
 - **LED Control**: Toggles an LED connected to a GPIO pin of the ESP32 using HTTP requests.
 - **Standalone Operation**: Does not require any external server or cloud platform.
 - **Responsive Design**: Styled HTML page suitable for both mobile and desktop browsers.
-- 
+  
 ## Working Principle
 The ESP32 initializes as a Wi-Fi station and connects to the local network. It then starts an HTTP server that serves a webpage. This page contains buttons to control the LED.
 
@@ -34,22 +34,23 @@ In Station Mode, the ESP32 connects to an existing Wi-Fi network.
 
 ## How it works:
 
-**-** ESP32 joins your home or office Wi-Fi using SSID and password.
-**-** Once connected, it obtains an IP address from the router.
-**-** The web server is hosted on that IP address.
-**-** Users can visit the IP address in a browser and control the LED using the webpage.
-**-** This mode is ideal for integration into existing network environments.
+- ESP32 joins your home or office Wi-Fi using SSID and password.
+- Once connected, it obtains an IP address from the router.
+- The web server is hosted on that IP address.
+- Users can visit the IP address in a browser and control the LED using the webpage.
+- This mode is ideal for integration into existing network environments.
 
 ## 2. Access Point Mode (AP)
 In Access Point Mode, the ESP32 creates its own Wi-Fi network, allowing direct connection without any router.
 
 ## How it works:
 
-**-** ESP32 creates a hotspot (e.g., ESP32-LED).
-**-** Users connect their phones or laptops to this Wi-Fi.
-**-** The server is accessible at a static IP (typically 192.168.4.1).
-**-** Users can access the same LED control interface.
-**-** This mode is useful in locations where no Wi-Fi infrastructure exists.
+- ESP32 creates a hotspot (e.g., ESP32-LED).
+-  Users connect their phones or laptops to this Wi-Fi.
+- The server is accessible at a static IP (typically 192.168.4.1).
+- Users can access the same LED control interface.
+- This mode is useful in locations where no Wi-Fi infrastructure exists.
+
 ## ESP32 LED Control System
 Below is the Implementation of the ESP32 LED Web Control:
 
