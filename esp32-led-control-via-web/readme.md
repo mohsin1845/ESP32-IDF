@@ -33,7 +33,7 @@ The ESP32 can function in three modes:
 ## 1. Station Mode (STA)
 In Station Mode, the ESP32 connects to an existing Wi-Fi network.
 
-## How it works:
+## 🔧 How it works:
 
 - ESP32 joins your home or office Wi-Fi using SSID and password.
 - Once connected, it obtains an IP address from the router.
@@ -44,7 +44,7 @@ In Station Mode, the ESP32 connects to an existing Wi-Fi network.
 ## 2. Access Point Mode (AP)
 In Access Point Mode, the ESP32 creates its own Wi-Fi network, allowing direct connection without any router.
 
-## How it works:
+## 🔧 How it works:
 
 - ESP32 creates a hotspot (e.g., ESP32-LED).
 -  Users connect their phones or laptops to this Wi-Fi.
