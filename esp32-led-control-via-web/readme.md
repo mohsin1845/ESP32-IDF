@@ -1,4 +1,4 @@
-# ESP32 LED Control via Web
+# ESP32 LED Control via Web using Espress IDF
 
 The ESP32 LED Control via Web project allows users to control an LED remotely through a web browser. This system hosts a webpage on the ESP32 microcontroller that can be accessed over Wi-Fi. With simple ON and OFF buttons, users can toggle an LED from any device connected to the same network. It’s a lightweight and efficient solution to demonstrate the capabilities of embedded web servers using ESP32.
 
@@ -25,10 +25,11 @@ The page dynamically updates to reflect the current state of the LED.
 
 ---
 
-The ESP32 can function in two modes:
+The ESP32 can function in three modes:
 
 - **Station Mode (STA)**
 - **Access Point Mode (AP)**
+- **Station Mode (STA) + Access Point Mode (AP)**
 ## 1. Station Mode (STA)
 In Station Mode, the ESP32 connects to an existing Wi-Fi network.
 
@@ -50,7 +51,21 @@ In Access Point Mode, the ESP32 creates its own Wi-Fi network, allowing direct c
 - The server is accessible at a static IP (typically 192.168.4.1).
 - Users can access the same LED control interface.
 - This mode is useful in locations where no Wi-Fi infrastructure exists.
+  
+## 3. Station + Access Point Mode (AP + STA)
+In AP + STA Mode, the ESP32 does both: it connects to an existing Wi-Fi network and simultaneously creates its own access point.
 
+## 🔧 How it works:
+
+- ESP32 connects to your router (as STA) using your SSID and password.
+- Simultaneously, it broadcasts its own Wi-Fi network (as AP) — e.g., ESP32-Access-Point.
+- You can control the ESP32 in two ways:
+    - From your existing Wi-Fi network (via the router-assigned IP address).
+    - By connecting directly to the ESP32’s hotspot and accessing it at 192.168.4.1.
+- This mode offers maximum flexibility:
+- Use STA when in range of a router.
+- Fall back to AP when offline or in the field.
+  
 ## ESP32 LED Control System
 Below is the circuit Connections of the ESP32 LED Web Control :
 
